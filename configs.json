@@ -1,0 +1,18 @@
+{
+    "language": "vi",
+    "dev_mode": true,
+    "test_mode": false,
+    "allow_inbox": false,
+    "disabled": [],
+    "saveData": true,
+    "BOTNAME": "CherryPlus - Create By Henry",
+    "prefix": "#",
+    "BotSystem": "ID Test Group",
+    "ADMIN": ["Your ID", "Your ID"],
+    "optionsLogin": {
+        "forceLogin": true,
+        "autoMarkRead": true,
+        "listenEvents": true,
+        "selfListen": true
+    }
+}

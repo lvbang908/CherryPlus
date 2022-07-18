@@ -1,0 +1,91 @@
+{
+    "informations": "Selected language: %locale\nLanguage available: %available language",
+    "Cherry": {
+        "checking_appstate": "Checking appstate.json before start...",
+        "not_found_appstate": "Not found appstate.json!",
+        "input_key_appstate": "Please input key to decrypt appstate: ",
+        "cannot_decrypt": "Can't decrypt appstate, please try again",
+        "create_variables": "Creating variables...",
+        "checking_database": "Checking database file(s)",
+        "configs_loader": "Loading configs...",
+        "error_load_configs": "Unable to load file configs.json",
+        "cannot_get_notifications": "Can't received notifications...",
+        "load": "Loading necessary commands and events...",
+        "successfully_loaded": "Successfully loaded %1 commands & %2 events",
+        "starting_server": "Starting the server...",
+        "login": "Login in progress...",
+        "error_login": "There was an error logging in, please check your account and try again",
+        "success_login": "Login successfully, starting Listener...",
+        "error_listener": "Something went wrong with the Listener, please check your account and try again",
+        "success_start_listener": "Listener start up successfully, you can use Bot now.",
+        "integer": "You need to enter an integer greater than 0",
+        "time_format": "This datetime format is not supported, the supported format is: HH:mm:ss DD/MM/YYYY",
+        "superban": "You were banned for a reason:\n\n%1\nIf this is an error, please contact email: hotro.cherry@gmail.com for resolution.",
+        "noti": "» Notifications From ADMIN «"
+    },
+    "handleCommands": {
+        "undefinedCommands": "The order you utilized was not found. Would you like to utilize '%cmds'?",
+        "user_banned": "You has been banned with reason: %1\n\nAuthor: %2",
+        "thread_banned": "This group has been banned with reason: %1\n\nAuthor: %2",
+        "no_reason": "There's no reason",
+        "unknownAuthor": "Unknown",
+        "test_mode": "TestMode is active. This mode only allows Bot to manage usage, please try again later.",
+        "SuperAdmin": "Only Bot administrators can use this command!",
+        "admin": "Only admins or Bot managers can use this command!",
+        "log": "Commands: %1 | User: %2 | Group: %3 | Process Time: %4 ms",
+        "guide": "You may be using the wrong command format, send %1 to know how to utilize it."
+    },
+    "handleEvents": {
+        "show": false,
+        "noti": "EVENTS",
+        "content": "Event: %1 | Group: %2 | Process Time: %3ms",
+        "color": ""
+    },
+    "handleDatabase": {
+        "noti_status": true,
+        "type_threads": "THREADS - CREATE DATA",
+        "type_users": "USERS - CREATE DATA",
+        "info_threads": "New Threads: %1 | ID: %2 | Create Time: %3",
+        "info_users": "New Users: %1 | ID: %2 | Create Time: %3",
+        "color": "warn"
+    },
+    "database": {
+        "create_error": "Failed to create new database file, please check and try again.",
+        "undefined_data": "'Data' can't be left clear",
+        "undefined_userID": "Can't be left clear userID",
+        "undefined_threadID": "Can't be left clear threadID",
+        "NaN_userID": "Invalid UserID got (%1)",
+        "NaN_threadID": "Invalid ThreadID got (%1)",
+        "hasThreadID": "The group with ID %1 already exists in the database",
+        "hasUserID": "User with ID %1 already exists in database",
+        "hasUserID_inThreads": "User with ID %1 already exists in this group's database",
+        "notFoundUserID_inThreads": "User with ID %1 does not exist in this group's database",
+        "notfound_threadID": "Group with ID %1 does not exist in database",
+        "notfound_userID": "User with ID %1 does not exist in database",
+        "isObject": "The passed parameter must be an Object",
+        "isArray": "The input parameter must be an Array"
+    },
+    "loadCommand&Events": {
+        "isObject": "The passed parameter must be an Object",
+        "notfound_command&event": "The variable name contained in 'data' must be 'commands' or 'events'.",
+        "wrong_format": "%1 %2 written in the wrong format.",
+        "no_name": "%1 %2 unnamed.",
+        "install": "Installing %1 for %2 %3...",
+        "load_language": "Loading locale %1 for %2 %3...",
+        "not_found_language": "The selected language is not found (%1) in %2 %3, randomly loads..."
+    },
+    "update": {
+        "new_version": "There have been updates that are newer than the current version, which include the following changes:",
+        "type": "Type: 'node update' in cmd to proceed with the update.",
+        "error": "Unable to check for updates..."
+    },
+    "save_attachment": {
+        "isArray": "Attachments must be an Array.",
+        "err_path": "The path to save must be a directory, not a file."
+    },
+    "session": {
+        "morning": "Morning",
+        "noon": "Noon",
+        "night": "Night"
+    }
+}

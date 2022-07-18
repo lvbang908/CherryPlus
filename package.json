@@ -1,0 +1,29 @@
+{
+  "name": "cherry-plus",
+  "version": "1.0.0",
+  "description": "A simple Bot for Facebook Messenger create by Henry",
+  "main": "cherry.js",
+  "scripts": {
+    "start": "node cherry.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henry",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoahenry/CherryPlus"
+  },
+  "bugs": {
+    "url": "https://github.com/hoahenry/CherryPlus/issues"
+  },
+  "homepage": "https://github.com/hoahenry/CherryPlus#readme",
+  "keywords": ["Bot", "Bot Chat Messenger", "Bot Profile", "AutoReply", "Henry"],
+  "dependencies": {
+    "axios": "",
+    "express": "",
+    "readline-sync": "",
+    "semver": "",
+    "moment-timezone": "",
+    "fb-chat-api": ""
+  }
+}

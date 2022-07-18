@@ -1,0 +1,49 @@
+You can make a record for the language you need with a layout as beneath.
+Bạn có thể tạo tệp cho ngôn ngữ mà mình muốn với mẫu bên dưới.
+
+Note:
+1. Please synchronize variable names with other languages so that users can modify them more easily - Vui lòng đồng bộ tên biến với các ngôn ngữ khác để người dùng có thể sửa đổi chúng dễ dàng hơn.
+2. Replaced words will start from %1. Ex: %1, %2, %3... - Các từ được thay thế sẽ bắt đầu từ %1. Ví Dụ: %1, %2, %3... 
+
+//English
+{
+    "region": {
+        "variables_name": "content",
+        "variables_name_2": "content"
+    },
+    "region_2": {
+        "variables_name": "content",
+        "variables_name_2": "content"
+    }
+}
+Ex:
+    {
+        "handleCommands": {
+            "permission_denied": "Sorry, you are not approved to utilize this order"
+        }
+        "rule": {
+            ...
+        }
+    }
+
+
+//VietNamese
+{
+    "vùng": {
+        "tên_biến": "nội dung",
+        "tên_biến_2": "nội dung",
+    },
+    "vùng_2": {
+        "tên_biến": "nội dung",
+        "tên_biến_2": "nội dung",
+    }
+}
+Ví Dụ:
+    {
+        "handleCommands": {
+            "permission_denied": "Xin lỗi, bạn không đủ quyền hạn để sử dụng lệnh này"
+        }
+        "rule": {
+            ...
+        }
+    }

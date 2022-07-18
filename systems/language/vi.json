@@ -1,0 +1,93 @@
+{
+    "informations": "Ngôn Ngữ Hiện Tại: %locale\nNgôn Ngữ Khả Dụng: %available ngôn ngữ",
+    "Cherry": {
+        "checking_appstate": "Đang kiểm tra file appstate.json trước khi khởi động Bot...",
+        "not_found_appstate": "Không tìm thấy file appstate.json!",
+        "input_key_appstate": "Vui long nhap key de decrypt appstate: ",
+        "cannot_decrypt": "Không thể decrypt file appstate.json, vui lòng kiểm tra và thử lại",
+        "create_variables": "Đang tiến hành khởi tạo các biến...",
+        "checking_database": "Đang kiểm tra các file database...",
+        "configs_loader": "Tiến hành load file configs...",
+        "error_load_configs": "Không thể load file configs.json",
+        "cannot_get_notifications": "Không thể nhận thông báo từ sever...",
+        "load": "Đang load các commands và events cần thiết...",
+        "successfully_loaded": "Đã load thành công %1 commands & %2 events",
+        "starting_server": "Đang khởi động server...",
+        "login": "Đang tiến hành đăng nhập...",
+        "error_login": "Đã có lỗi xảy ra khi đăng nhập, vui lòng kiểm tra lại tài khoản của bạn và thử lại",
+        "success_login": "Đăng nhập thành công, đang khởi động Listener...",
+        "error_listener": "Đã xảy ra lỗi với Listener, vui lòng kiểm tra lại tài khoản của bạn và thử lại",
+        "success_start_listener": "Khởi động Listener thành công, bạn có thể sử dụng Bot ngay bây giờ.",
+        "integer": "Bạn cần nhập vào một số nguyên lớn hơn 0",
+        "time_format": "Định dạng ngày giờ này không được hỗ trợ, định dạng được hỗ trợ là: HH:mm:ss DD/MM/YYYY",
+        "superban": "Bạn đã bị ban với lí do:\n\n%1\nNếu đây là lỗi, vui lòng liên hệ email: hotro.cherry@gmail.com để được giải quyết.",
+        "noti": "» Thông Báo Từ ADMIN «",
+        "test": "Hi, %1\nMy name is Cherry\n%2"
+    },
+    "handleCommands": {
+        "undefinedCommands": "Không tìm thấy lệnh bạn đã sử dụng. Có phải bạn muốn dùng '%1' không?",
+        "user_banned": "Bạn bị cấm dùng Bot với lí do: %1\n\nNgười Cấm: %2",
+        "thread_banned": "Nhóm này bị cấm dùng Bot với lí do: %1\n\nNgười Cấm: %2",
+        "no_reason": "mà không có lí do.",
+        "unknowAuthor": "Không rõ",
+        "test_mode": "TestMode đang được bật. Chế độ này chỉ cho phép người quản lí Bot sử dụng, vui lòng thử lại sau.",
+        "SuperAdmin": "Chỉ người quản lí Bot mới được sử dụng lệnh này!",
+        "admin": "Chỉ quản trị viên hoặc người quản lí Bot mới được sử dụng lệnh này!",
+        "log": "Lệnh: %1 | Người Dùng: %2 | Nhóm: %3 | Thời Gian Xử Lí: %4ms",
+        "guide": "Có thể bạn đã sử dụng sai format lệnh, vui lòng gửi %1 để biết cách sử dụng."
+    },
+    "handleEvents": {
+        "show": false,
+        "noti": "EVENTS",
+        "content": "Event: %1 | Nhóm: %2 | Thời Gian: %3ms",
+        "color": ""
+    },
+    "handleDatabase": {
+        "noti_status": true,
+        "type_threads": "THREADS - CREATE DATA",
+        "type_users": "USERS - CREATE DATA",
+        "info_threads": "New Threads: %1 | ID: %2 | Giờ Tạo: %3",
+        "info_users": "New Users: %1 | ID: %2 | Giờ Tạo: %3",
+        "color": "warn"
+    },
+    "database": {
+        "create_error": "Không thể tạo file database mới, vui lòng kiểm tra và thử lại.",
+        "undefined_data": "Data không được để trống",
+        "undefined_userID": "Không được để trống userID",
+        "undefined_threadID": "Không được để trống threadID",
+        "NaN_userID": "UserID nhận được (%1) không hợp lệ",
+        "NaN_threadID": "ThreadID nhận được (%1) không hợp lệ",
+        "hasThreadID": "Nhóm có ID %1 đã tồn tại trong database",
+        "hasUserID": "Người dùng có ID %1 đã tồn tại trong database",
+        "hasUserID_inThreads": "Người dùng có ID %1 đã tồn tại trong database của nhóm này",
+        "notFoundUserID_inThreads": "Người dùng có ID %1 đã tồn tại trong database của nhóm này",
+        "notfound_threadID": "Nhóm có ID %1 không tồn tại trong database",
+        "notfound_userID": "Người dùng có ID %1 không tồn tại trong database",
+        "isObject": "Tham số truyền vào phải là một Object",
+        "isArray": "Tham số truyền vào phải là một Array"
+    },
+    "loadCommand&Events": {
+        "isObject": "Tham số truyền vào phải là một Object",
+        "notfound_command&event": "Tên biến chứa trong data phải là 'commands' hoặc 'events'.",
+        "wrong_format": "%1 %2 được viết không đúng định dạng.",
+        "no_name": "%1 %2 chưa được đặt tên.",
+        "install": "Đang cài đặt %1 cho %2 %3",
+        "load_language": "Đang load ngôn ngữ %1 cho %2 %3...",
+        "not_found_language": "Không tìm thấy ngôn ngữ đang chọn (%1) trong %2 %3, tiến hành load ngẫu nhiên...",
+        "language_type": "Hàm language trong %1 %2 phải là Object"
+    },
+    "update": {
+        "new_version": "Đã có những bản cập nhật mới hơn phiên bản hiện tại, những bản cập nhật này gồm có những thay đổi sau:",
+        "type": "Gõ: 'node update' vào cmd để tiến hành cập nhật.",
+        "error": "Không thể kiểm tra cập nhật..."
+    },
+    "save_attachment": {
+        "isArray": "Attachments phải là một Array.",
+        "err_path": "Đường dẫn để lưu phải là một thư mục, không phải một tệp tin."
+    },
+    "session": {
+        "morning": "Buổi Sáng",
+        "noon": "Buổi Trưa",
+        "night": "Buổi Tối"
+    }
+}

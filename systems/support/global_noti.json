@@ -1,0 +1,11 @@
+{
+    "session": {
+        "Off": [
+            "Thông báo hiện tại đang được tắt"
+        ]
+    },
+    "message": {
+        "type": "log",
+        "content": "Noti test"
+    }
+}
