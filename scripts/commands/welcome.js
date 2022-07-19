@@ -89,7 +89,7 @@ module.exports.start = async function ({ args, event, api, Threads, Cherry }) {
             }
         case "view":
             var { msgWelcome } = await Threads.getData(threadID);
-            var msg = { body: msgWelcome ? msgWelcome : Language.get('welcome', 'welcome_users'), attachment: existsSync(path) ? createReadStream(path) : '' };
+            var msg = { body: msgWelcome ? msgWelcome : Language.get('welcome', 'welcome_users', '[Tên Thành Viên]', '[Tên Nhóm]', '[Bạn/Các Bạn]', '[Số Thành Viên]', '[Thời Gian]', '[Prefix]'), attachment: existsSync(path) ? createReadStream(path) : '' };
             msg.body = msg.body
             .replace(/\{name}/g, Language.get('welcome', 'members_name'))
             .replace(/\{type}/g, Language.get('welcome', 'type'))
