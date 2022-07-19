@@ -58,6 +58,7 @@ module.exports.start = async function ({ args, event, api, Threads, Cherry }) {
     var { existsSync, createReadStream } = require("fs");
     var { threadID, messageID } = event;
     var msg = args.slice(1).join(" ");
+    var path = `${process.cwd()}/scripts/events/cache/${threadID}.gif`;
 
     switch (args[0]) {
         case "text":
@@ -73,7 +74,6 @@ module.exports.start = async function ({ args, event, api, Threads, Cherry }) {
                 return api.sendMessage(msg, threadID);
             });
         case "gif":
-            var path = `${process.cwd()}/scripts/events/cache/${threadID}.gif`;
             if (msg == "remove") {
                 if (!existsSync(path)) return api.sendMessage(Language.get('welcome', 'not_found_gif'), threadID, messageID);
                 else unlinkSync(path);
