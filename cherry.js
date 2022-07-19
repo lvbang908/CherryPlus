@@ -87,6 +87,7 @@ else log('CHERRY BOT', Language.get('Cherry', 'successfully_loaded', Cli.command
 //         res.send({ status: 'working' });
 // })
 // app.listen(port);
+// if (!Cherry.host) Cherry.host = [];
 // Cherry.host.push(port);
 
 //Start login & listener
