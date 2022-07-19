@@ -57,8 +57,8 @@ module.exports.onLoad = function () {
 module.exports.start = async function ({ args, event, api, Threads, Cherry }) {
     var { existsSync, createReadStream } = require("fs");
     var { threadID, messageID } = event;
-    var msg = args.slice(1).join(" ");
     var path = `${process.cwd()}/scripts/events/cache/${threadID}.gif`;
+    var msg = args.slice(1).join(" ");
 
     switch (args[0]) {
         case "text":
@@ -89,7 +89,7 @@ module.exports.start = async function ({ args, event, api, Threads, Cherry }) {
             }
         case "view":
             var { msgWelcome } = await Threads.getData(threadID);
-            var msg = { body: msgWelcome ? msgWelcome : Language.get('welcome', 'welcome_users', '[Tên Thành Viên]', '[Tên Nhóm]', '[Bạn/Các Bạn]', '[Số Thành Viên]', '[Thời Gian]', '[Prefix]'), attachment: existsSync(path) ? createReadStream(path) : '' };
+            var msg = { body: msgWelcome ? msgWelcome : Language.get('welcome', 'welcome_users', Language.get('welcome', 'members_name'), Language.get('welcome', 'thread_name'), Language.get('welcome', 'type'), Language.get('welcome', 'totalMembers'), Language.get('welcome', 'session'), Language.get('welcome', 'prefix')), attachment: existsSync(path) ? createReadStream(path) : '' };
             msg.body = msg.body
             .replace(/\{name}/g, Language.get('welcome', 'members_name'))
             .replace(/\{type}/g, Language.get('welcome', 'type'))
