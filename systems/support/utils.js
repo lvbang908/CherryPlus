@@ -27,21 +27,15 @@ module.exports = function({ Cherry, Cli, api, Threads, Users, Others, Language }
     async function calc_sendMessage(data) {
         for (var [hours, message] of Object.entries(data)) {
             if (!/[0-9]{2}:[0-9]{2}:[0-9]{2}/.test(hours)) continue;
-            var _hours = hours.slice(0, 2), hours_now = Cherry.getTime('HH'), date_now = Cherry.getTime('DD'), month_now = Cherry.getTime('MM'), full_time = Cherry.getTime('FT');
-            if (parseInt(_hours) <= parseInt(hours_now)) date_now = parseInt(date_now) + 1 <= last_date_in_month(month_now) ? parseInt(date_now) + 1 : '01';
+            var _hours = hours.slice(0, 2), _minutes = hours.slice(3, 5), minutes_now = Cherry.getTime('mm'), hours_now = Cherry.getTime('HH'), date_now = Cherry.getTime('DD'), month_now = Cherry.getTime('MM'), full_time = Cherry.getTime('FT');
+            if (parseInt(_hours) < parseInt(hours_now) || parseInt(_hours) == parseInt(hours_now) && parseInt(_minutes) < parseInt(minutes_now)) date_now = parseInt(date_now) + 1 <= last_date_in_month(month_now) ? parseInt(date_now) + 1 : '01';
             var { data } = Cherry.date_to_timestamp(hours + ' ' + date_now + '/' + Cherry.getTime('MM/YYYY'));
             var { data: timestamp_now } = Cherry.date_to_timestamp(full_time);
             var time = data - timestamp_now;
-            var allThreads = await Threads.getAll(['ID', 'isGroup']);
-            for (var i of allThreads) {
-                if (i.isGroup == true) {
-                    let ID = setTimeout(() => {
-                        api.sendMessage(message[Math.floor(Math.random() * message.length)], i.ID);
-                        allTimeout.delete(hours);
-                    }, time);
-                    allTimeout.set(hours, ID);
-                }
-            }
+            setTimeout(async() => {
+                var allThreads = await Threads.getAll(['ID', 'isGroup']);
+                for (var i of allThreads) if (i.isGroup == true) api.sendMessage(message[Math.floor(Math.random() * message.length)], i.ID);
+            }, time);
         }
     }
 
