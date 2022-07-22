@@ -24,7 +24,7 @@
         "noti": "» Notifications From ADMIN «"
     },
     "handleCommands": {
-        "undefinedCommands": "The order you utilized was not found. Would you like to utilize '%cmds'?",
+        "undefinedCommands": "The order you utilized was not found. Would you like to utilize '%1'?",
         "user_banned": "You has been banned with reason: %1\n\nAuthor: %2",
         "thread_banned": "This group has been banned with reason: %1\n\nAuthor: %2",
         "no_reason": "There's no reason",
