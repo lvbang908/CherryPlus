@@ -118,7 +118,7 @@ async function save_attachments(attachments, saveTo) {
     try {
         if (!Array.isArray(attachments)) throw new Error(global.Language.get('save_attachment', 'isArray'));
         if (!/\/$/g.test(saveTo)) throw new Error(global.Language.get('save_attachment', 'err_path'));
-        if (!existsSync(path)) mkdirSync(path, { recursive: true })
+        if (!existsSync(saveTo)) mkdirSync(saveTo, { recursive: true });
         var path = [], number = 1;
         for (var i of attachments) {
             var dotEx = ['photo', 'audio', 'video', 'gif'];
