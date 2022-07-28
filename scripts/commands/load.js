@@ -44,7 +44,7 @@ module.exports.start = function({ api, event, args, Cherry, Cli, Language, start
         case "configs":
             var { error } = Cherry.load_configs({ Cherry, Cli, Language });
             if (error) return api.sendMessage(Language.get('load', 'configs_error', error), threadID);
-            else return api.sendMessage(Language.get('load', 'success', Date.now() - start_handle), threadID);
+            else return api.sendMessage(Language.get('load', 'configs_success', Date.now() - start_handle), threadID);
         case "all":
             var { error: cfg } = Cherry.load_configs({ Cherry, Cli, Language });
             if (cfg) return api.sendMessage(Language.get('load', 'configs_error'), threadID);
