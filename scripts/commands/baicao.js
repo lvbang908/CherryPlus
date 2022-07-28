@@ -59,7 +59,7 @@ module.exports.handleEvents = async ({ event, api, Users, Others, Cherry }) => {
             for (var info of players) rank.push(`${num++} • ${info.name} với ${info.card.join(' ')}, tổng: ${info.tong} điểm\n`);
             var coin_win = data.bet * players.length;
             var { coin } = await Others.getData(win.ID)
-            await Others.setData(win.ID, coin + coin_win)
+            await Others.setData(win.ID, { coin: coin + coin_win })
             rank.push(`${win.name} thắng với ${win.tong} điểm và nhận được ${coin} coin`);
             return api.sendMessage(`${rank.join(' ')}`, threadID, messageID);
         }
