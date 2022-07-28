@@ -13,7 +13,7 @@ module.exports.info = {
 
 module.exports.language = {
     vi: {
-        template: 'Hôm nay là ngày sinh của những thiên thần dưới đây:\n\n',,
+        template: 'Hôm nay là ngày sinh của những thiên thần dưới đây:\n\n',
 		an_user: 'bạn ấy',
 		many_users: 'các bạn ấy',
         footer: '\nMọi người tới chúc mừng sinh nhật cho %1 nào.',
