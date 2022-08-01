@@ -23,7 +23,7 @@ module.exports.language = {
         empty_page: 'Trang bạn nhập không có lệnh nào, vui lòng kiểm tra và thử lại.',
         message_commands_info: 'Tên Lệnh: %1.\n📜 Mô Tả: %2.\n⏳ Thời Gian Chờ: %3 giây/người.\n✊ Quyền Hạn: %4\n📄 Hướng dẫn: %5\n',
         info_one_commands: '%1. Tên Lệnh: %2\nMô Tả: %3%4',
-        footer: '%1📜 Trang: %2/%3\n🍀 Có %4 lệnh có thể sử dụng.\n%1➴ Gửi %5help [số trang] để xem danh sách lệnh tại trang đó.\n➴ Gửi %6help [tên lệnh] để xem chi tiết cách sử dụng lệnh.',
+        footer: '%1📜 Trang: %2/%3\n🍀 Có %4 lệnh có thể sử dụng.\n%1➴ Gửi %5help [số trang] để xem danh sách lệnh tại trang đó.\n➴ Gửi %5help [tên lệnh] để xem chi tiết cách sử dụng lệnh.',
         author: '© Tác Giả: ',
         not_found_tut: 'Không tìm thấy hướng dẫn',
         '<np>': '',
